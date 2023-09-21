@@ -1,0 +1,189 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('bekgron.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.input-field,
+.answer-input,
+.submit-button,
+.exit-button,
+.back-button,
+.try-again-button {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-button,
+.try-again-button,
+.exit-button,
+.back-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover,
+.try-again-button:hover,
+.exit-button:hover,
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 11px 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.header h1 {
+  align-items: center;
+}
+.logo {
+  flex: 1;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo h1 a{
+  margin: 0;
+  font-size: 20px;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.header-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 18px;
+  font-family: sans-serif; 
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 14px;
+  text-decoration: none;
+}
+.email-icon::before {
+  content: '\f0e0'; 
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+
+.whatsapp-icon::before {
+  content: '\f232'; 
+  font-family: FontAwesome;
+  margin-right: 5px;
+}
+/* Leaderboard table styles */
+.leaderboard-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.leaderboard-table th {
+  background-color: #f5f5f5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    max-width: 70%;
+    padding: 15px;
+  }
+
+  .input-field,
+  .answer-input,
+  .submit-button,
+  .exit-button,
+  .back-button,
+  .try-again-button {
+    width: 80%; /* Adjust the input field width for mobile */
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  /* Adjustments for the header */
+  .header {
+    padding: 10px 3px;
+  }
+
+  .header h1 {
+    font-size: 15px;
+  }
+
+  .header-link {
+    font-size: 15px;
+    margin-right: 3px; /* Adjust the link margin for mobile */
+  }
+
+  /* Adjustments for the social media icons */
+  .social-icon {
+    font-size: 20px;
+    margin-right: 6px; /* Adjust the icon margin for mobile */
+  }
+}

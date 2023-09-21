@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="/quiz.png"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Random Question Game</title>
+</head>
+<body>
+    <div class="header">
+        <a href="/leaderboard.html" class="header-link">Leaderboard</a>
+        <h1>Trivia Quiz </h1>
+        <div class="social-media">
+            <a href="https://www.facebook.com/mhaidar.avicenna" class="social-icon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/darrrrrv/" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:mhaidaravicenna070@gmail.com" class="social-icon" target="_blank"><span class="email-icon"></span></a>
+            <a href="https://wa.me/628551919068" class="social-icon" target="_blank"><span class="whatsapp-icon"></span></a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Question</h2>
+        <p id="score" class="score">Score: 0</p>
+        <div class="question-container">
+            <p id="question" class="question"></p>
+            <input type="text" id="answer" class="answer-input" placeholder="Your Answer">
+            <button id="submit" class="submit-button">Submit</button>
+            <p id="result" class="result"></p>
+            <button id="exit" class="exit-button">Exit</button>
+            <div id="feedback-text" class="incorrect-feedback"></div> <!-- Add this element for feedback -->
+        </div>
+    </div>
+    <script src="/quiz/script.js"></script>
+</body>
+</html>
