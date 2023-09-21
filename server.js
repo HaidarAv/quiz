@@ -12,10 +12,10 @@ app.use(express.json());
 app.use("/newquiz2", express.static(path.join(__dirname, "newquiz2")));
 const dbConfig = {
     host: "localhost",
-    user: "root",
+    user: "haidaradmin",
     password: "Haidarganteng",
-    database: "dbquiz2",
-    port: 3307,
+    database: "dbquiz",
+    port: 3306,
 };
 app.use(express.static(path.join(__dirname, "newquiz2")));
 const connection = mysql.createConnection(dbConfig);
